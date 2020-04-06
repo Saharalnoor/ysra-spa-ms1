@@ -3,7 +3,7 @@
 body {
     font-family: 'Comic Neue', sans-serif;
     text-align: justify;
-    color: #a8e619;
+    
 }
 
 .hero-container {
@@ -50,6 +50,7 @@ body {
     padding-right: 10px;
     padding-left: 10px;
 }
+
 .nav-item {
     color: #a8e619;
 }
@@ -103,4 +104,17 @@ body {
     background-color: #a8e619;
     border-color: #a8e619;
 }
+
+ .about p{
+    font-size: 1.2em;
+ }
+
+ .rounded-circle {
+  width: 300px;
+  height: 300px;
+  display: inline-block;
+  margin: 25px 10px;
+}
+ 
+
  
