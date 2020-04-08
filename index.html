@@ -7,6 +7,7 @@
 	<meta http-equiv="X-UA-Compatible" content="ie=edge">
 	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.4.1/css/bootstrap.min.css">
 	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/all.min.css">
+	<link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/fancyapps/fancybox@3.5.7/dist/jquery.fancybox.min.css" />
 	<link rel="stylesheet" href="assets/css/style.css" type="text/css">
 	<title>Ysra SPA</title>
 </head>
@@ -18,8 +19,8 @@
 			<img src="assets/images/LogoMakr_9qu29R.png" alt="spa logo" title="SPA logo">
         </a>
 			<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-    <span class="navbar-toggler-icon"></span>
-  </button>
+            <span class="navbar-toggler-icon"></span>
+            </button>
 			<div class="collapse navbar-collapse" id="navbarNav">
 				<ul class="navbar-nav ml-auto">
 					<li class="nav-item active">
@@ -32,6 +33,9 @@
 						<a class="nav-link" href="#services">Services</a>
 					</li>
 					<li class="nav-item">
+						<a class="nav-link" href="#gallery">Gallery</a>
+					</li>
+					<li class="nav-item">
 						<a class="nav-link" href="#contact">Contact</a>
 					</li>
 				</ul>
@@ -40,36 +44,38 @@
 	<!-- /Navigation -->
 
 	<div class="container-fluid hero-container">
-    <div class="opaque-overlay">&nbsp;</div>
+		<div class="opaque-overlay">&nbsp;</div>
 		<!-- Home -->
 		<div class="row">
 			<div class="col-12 my-5">
 				<section class="home jumbotron text-center">
-                <div class="align-items-right hero-cta">
-					<h2 class="jumbotron-header"> A Spa with a Lifestyle Experience </h2>
-                    <hr>
-					<button type="button" class="btn btn-mdc btn--book btn-outline-success" data-toggle="modal" data-target="#bookAnAppointmentModal">Book an Appointment</button>
-                </div>
-                </section>
+					<div class="align-items-right hero-cta">
+						<h2 class="jumbotron-header"> A Spa with a Lifestyle Experience </h2>
+						<hr>
+						<button type="button" class="btn btn-mdc btn--book btn-outline-success" data-toggle="modal" data-target="#bookAnAppointmentModal">Book an Appointment</button>
+					</div>
+				</section>
 			</div>
 		</div>
 	</div>
-		<!-- /Home -->
-		<!-- About -->
-		<div class="container about-container">
-			<section class="about" id="about">
-				<div class="row">
-					<div class="col-12 my-5 text-center">
-						<h3 class="text-uppercase font-weight-bold">About</h3>
-						<p>Ysra Spa is a haven of tranquility, offering a complete day spa experience, unique of its kind..
-                        </p>
-                        <p>Catering to both men and women, we encourage massage therapy to be incorporated into people’s lives on a regular basis as it is our passion to promote healthy living and lifestyle. 
-                        We aim to help clients with stress and pain management by reducing the need for prescription medication.
-						</p>
-					</div>
+	<!-- /Home -->
+	<!-- About -->
+	<div class="container about-container">
+		<section class="about" id="about">
+			<div class="row">
+				<div class="col-12 my-5 text-center">
+					<h3 class=" title text-uppercase font-weight-bold">About</h3>
+					<p>Ysra Spa is a haven of tranquility, offering a complete day spa experience, unique of its kind..
+					</p>
+					<p>Catering to both men and women, we encourage massage therapy to be incorporated into people’s
+						lives on a regular basis as it is our passion to promote healthy living and lifestyle.
+						We aim to help clients with stress and pain management by reducing the need for prescription
+						medication.
+					</p>
 				</div>
-			</section>
-		
+			</div>
+		</section>
+
 
 		<!-- /About -->
 		<!-- Services -->
@@ -77,13 +83,13 @@
 			<section class="hero-services" id="services">
 				<div class="row">
 					<div class="col-12 my-5 text-center">
-						<h3 class="text-uppercase font-weight-bold">Services</h3>
+						<h3 class="title text-uppercase font-weight-bold">Services</h3>
 					</div>
 				</div>
 				<div class="row text-center">
 					<div class="col-12 col-sm-4">
 						<div class="body-massage">
-                            <img src="assets/images/alan-caishan-unsplash.jpg" class="rounded-circle" alt="massage">
+							<img src="assets/images/alan-caishan-unsplash.jpg" class="rounded-circle" alt="massage">
 							<h3>Body Massage</h3>
 							<p>
 							</p>
@@ -91,14 +97,14 @@
 					</div>
 					<div class="col-12 col-sm-4">
 						<div class="face-treatment">
-                        <img src="assets/images/raphael-lovaski-unsplash.jpg" class="rounded-circle" alt="face-spa">
+							<img src="assets/images/raphael-lovaski-unsplash.jpg" class="rounded-circle" alt="face-spa">
 							<h3>Face Treatment</h3>
 							<p></p>
 						</div>
 					</div>
 					<div class="col-12 col-sm-4">
 						<div class="hand-and-foot-spa">
-                        <img src="assets/images/ian-dooley-unsplash.jpg" class="rounded-circle" alt="hand-and-foot-spa">
+							<img src="assets/images/ian-dooley-unsplash.jpg" class="rounded-circle" alt="hand-and-foot-spa">
 							<h3>Hand and Foot SPA</h3>
 							<p></p>
 						</div>
@@ -107,21 +113,96 @@
 			</section>
 		</div>
 		<!-- /services -->
-		<!-- Contact -->
-        <div class="container contact">
-		<section class="contact">
-			<div class="row">
-				<div class="col-12">
+
+		<!-- pricing -->
+		<div class="container pricing">
+			<section class="pricing">
+				<div class="row">
+					<div class="col-12">
+					</div>
 				</div>
-			</div>
-		</section>
-        </div>
+			</section>
+		</div>
+		<!-- /pricing -->
+
+		<!-- Gallery -->
+		<div class="container-fluid">
+			<section class="about" id="gallery">
+				<div class="row gallery-row justify-content-center">
+                <div class="col-12 my-5 text-center">
+						<h3 class="title text-uppercase font-weight-bold">Gallery</h3>
+					</div>
+					<div class="col-12 col-sm-3 spa-gallery">
+						<a href="assets/images/gallery/atelier-brunette-1-unsplash.jpg" data-fancybox="gallery"
+							data-caption="">
+							<figure><img src="assets/images/gallery/atelier-brunette-1-unsplash.jpg" alt="img-1" /></figure>
+                        </a>
+					</div>
+					<div class="col-12 col-sm-3 spa-gallery">
+						<a href="assets/images/gallery/toa-heftiba-2-unsplash.jpg" data-fancybox="gallery"
+							data-caption="">
+							<figure><img src="assets/images/gallery/toa-heftiba-2-unsplash.jpg" alt="img-2"/></figure>
+                        </a>
+					</div>
+					<div class="col-12 col-sm-3 spa-gallery">
+						<a href="assets/images/gallery/christin-hume-3-unsplash.jpg" data-fancybox="gallery"
+							data-caption="">
+							<figure><img src="assets/images/gallery/christin-hume-3-unsplash.jpg" alt="img-3" /></figure>
+                        </a>
+					</div>
+					<div class="col-12 col-sm-3 spa-gallery">
+						<a href="assets/images/gallery/hanna-postova-4-unsplash.jpg" data-fancybox="gallery"
+							data-caption="vase">
+							<figure><img src="assets/images/gallery/hanna-postova-4-unsplash.jpg" alt="img-4" /></figure>
+                        </a>
+					</div>
+					<div class="col-12 col-sm-3 spa-gallery">
+						<a href="assets/images/gallery/jared-rice-5-unsplash.jpg" data-fancybox="gallery"
+							data-caption="vase">
+							<figure><img src="assets/images/gallery/jared-rice-5-unsplash.jpg" alt="img-5" /></figure>
+                        </a>
+					</div>
+					<div class="col-12 col-sm-3 spa-gallery">
+						<a href="assets/images/gallery/massage-stones-6-small.jpg" data-fancybox="gallery"
+							data-caption="vase">
+							<figure><img src="assets/images/gallery/massage-stones-6-small.jpg" alt="img-6" /></figure>
+                        </a>
+					</div>
+					<div class="col-12 col-sm-3 spa-gallery">
+						<a href="assets/images/gallery/morgan-alley-7-unsplash.jpg" data-fancybox="gallery"
+							data-caption="vase">
+							<figure><img src="assets/images/gallery/morgan-alley-7-unsplash.jpg" alt="img-7" /></figure>
+                        </a>
+					</div>
+					<div class="col-12 col-sm-3 spa-gallery">
+						<a href="assets/images/gallery/rune-enstad-8-unsplash.jpg" data-fancybox="gallery"
+							data-caption="vase">
+							<figure><img src="assets/images/gallery/rune-enstad-8-unsplash.jpg" alt="img-8" /></figure>
+                        </a>
+					</div>
+				</div>
+			</section>
+		</div>
+
+
+		<!-- /Gallery -->
+
 		<!-- Contact -->
+		<div class="container contact">
+			<section class="contact">
+				<div class="row">
+					<div class="col-12">
+					</div>
+				</div>
+			</section>
+		</div>
+		<!-- /Contact -->
+
 		<!-- Footer -->
 		<footer>
 
 		</footer>
-		<!-- Footer -->
+		<!--/ Footer -->
 	</div>
 
 	<div class="modal" tabindex="-1" role="dialog" id="bookAnAppointmentModal">
@@ -171,6 +252,9 @@
 	<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.slim.min.js"></script>
 	<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
 	<script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.4.1/js/bootstrap.min.js"></script>
+	<script src="https://cdn.jsdelivr.net/gh/fancyapps/fancybox@3.5.7/dist/jquery.fancybox.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/jquery@3.4.1/dist/jquery.min.js"></script>
+	<script src="assets/js/main.js"></script>
 </body>
 
 </html>
