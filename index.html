@@ -60,7 +60,7 @@
 	</div>
 	<!-- /Home -->
 	<!-- About -->
-	<div class="container about-container">
+	<div class="container-fluid p-5">
 		<section class="about" id="about">
 			<div class="row">
 				<div class="col-12 my-5 text-center">
@@ -79,7 +79,7 @@
 
 		<!-- /About -->
 		<!-- Services -->
-		<div class="container services-container">
+		<div class="container-fluid p-5">
 			<section class="hero-services" id="services">
 				<div class="row">
 					<div class="col-12 my-5 text-center">
@@ -126,59 +126,62 @@
 		<!-- /pricing -->
 
 		<!-- Gallery -->
-		<div class="container-fluid">
+		<div class="container-fluid p-5">
 			<section class="about" id="gallery">
 				<div class="row gallery-row justify-content-center">
-                <div class="col-12 my-5 text-center">
+					<div class="col-12 my-5 text-center">
 						<h3 class="title text-uppercase font-weight-bold">Gallery</h3>
 					</div>
 					<div class="col-12 col-sm-3 spa-gallery">
 						<a href="assets/images/gallery/atelier-brunette-1-unsplash.jpg" data-fancybox="gallery"
 							data-caption="">
-							<figure><img src="assets/images/gallery/atelier-brunette-1-unsplash.jpg" alt="img-1" /></figure>
-                        </a>
+							<figure>
+								<img src="assets/images/gallery/atelier-brunette-1-unsplash.jpg" alt="img-1" /></figure>
+						</a>
 					</div>
 					<div class="col-12 col-sm-3 spa-gallery">
 						<a href="assets/images/gallery/toa-heftiba-2-unsplash.jpg" data-fancybox="gallery"
 							data-caption="">
 							<figure><img src="assets/images/gallery/toa-heftiba-2-unsplash.jpg" alt="img-2"/></figure>
-                        </a>
+						</a>
 					</div>
 					<div class="col-12 col-sm-3 spa-gallery">
 						<a href="assets/images/gallery/christin-hume-3-unsplash.jpg" data-fancybox="gallery"
 							data-caption="">
-							<figure><img src="assets/images/gallery/christin-hume-3-unsplash.jpg" alt="img-3" /></figure>
-                        </a>
+							<figure>
+								<img src="assets/images/gallery/christin-hume-3-unsplash.jpg" alt="img-3" /></figure>
+						</a>
 					</div>
 					<div class="col-12 col-sm-3 spa-gallery">
 						<a href="assets/images/gallery/hanna-postova-4-unsplash.jpg" data-fancybox="gallery"
 							data-caption="vase">
-							<figure><img src="assets/images/gallery/hanna-postova-4-unsplash.jpg" alt="img-4" /></figure>
-                        </a>
+							<figure>
+								<img src="assets/images/gallery/hanna-postova-4-unsplash.jpg" alt="img-4" /></figure>
+						</a>
 					</div>
 					<div class="col-12 col-sm-3 spa-gallery">
 						<a href="assets/images/gallery/jared-rice-5-unsplash.jpg" data-fancybox="gallery"
 							data-caption="vase">
 							<figure><img src="assets/images/gallery/jared-rice-5-unsplash.jpg" alt="img-5" /></figure>
-                        </a>
+						</a>
 					</div>
 					<div class="col-12 col-sm-3 spa-gallery">
 						<a href="assets/images/gallery/massage-stones-6-small.jpg" data-fancybox="gallery"
 							data-caption="vase">
 							<figure><img src="assets/images/gallery/massage-stones-6-small.jpg" alt="img-6" /></figure>
-                        </a>
+						</a>
 					</div>
 					<div class="col-12 col-sm-3 spa-gallery">
 						<a href="assets/images/gallery/morgan-alley-7-unsplash.jpg" data-fancybox="gallery"
 							data-caption="vase">
 							<figure><img src="assets/images/gallery/morgan-alley-7-unsplash.jpg" alt="img-7" /></figure>
-                        </a>
+						</a>
 					</div>
 					<div class="col-12 col-sm-3 spa-gallery">
 						<a href="assets/images/gallery/rune-enstad-8-unsplash.jpg" data-fancybox="gallery"
 							data-caption="vase">
 							<figure><img src="assets/images/gallery/rune-enstad-8-unsplash.jpg" alt="img-8" /></figure>
-                        </a>
+						</a>
 					</div>
 				</div>
 			</section>
@@ -188,12 +191,25 @@
 		<!-- /Gallery -->
 
 		<!-- Contact -->
-		<div class="container contact">
+        <div class="text-center container-fluid p-5">
+		<div class="row justify-content-center">
+			<div class="col-10">
+				<h3 class="title text-uppercase font-weight-bold">Contact</h3>
+			</div>
+		</div>
+	</div>
+		<div class="container-fluid">
 			<section class="contact">
 				<div class="row">
-					<div class="col-12">
-					</div>
+					<div class="col-sm-12 col-md-6 justify-content-center">
+                    
+                      
 				</div>
+			</div>
+		
+	
+
+
 			</section>
 		</div>
 		<!-- /Contact -->
@@ -221,25 +237,25 @@
 					<form>
 						<div class="form-row">
 							<div class="col">
-								<label for="name">Name</label>
-								<input type="text" class="form-control">
+								<label for="fullName">First Name <span class="required-input">*</span></label>
+								<input type="text" class="form-control" id="fullName">
                             </div>
 								<div class="col">
-									<label for="lastName">Last Name</label>
-									<input type="text" class="form-control">
+									<label for="LastName">Last Name <span class="required-input">*</span></label>
+									<input type="text" class="form-control" id="LastName">
                                 </div>
 								</div>
 
 								<div class="form-group">
-									<label for="inputEmail4">Email</label>
+									<label for="inputEmail4">Email <span class="required-input">*</span></label>
 									<input type="text" class="form-control" id="inputEmail4">
                                 </div>
 									<div class="form-group">
-										<label for="phone_num">Contact Number</label>
+										<label for="phone_num">Contact Number <span class="required-input">*</span></label>
 										<input type="tel" class="form-control" id="phone_num">
                                 </div>
 										<div class="form-group">
-											<label for="exampleFormControlTextarea1">Message</label>
+											<label for="message">Message</label>
 											<textarea class="form-control" id="message" rows="3"></textarea>
 										</div>
 										<button type="button" class="btn btn-mdc btn-outline-success">Sumbit</button>
@@ -253,7 +269,7 @@
 	<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
 	<script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.4.1/js/bootstrap.min.js"></script>
 	<script src="https://cdn.jsdelivr.net/gh/fancyapps/fancybox@3.5.7/dist/jquery.fancybox.min.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/jquery@3.4.1/dist/jquery.min.js"></script>
+	<script src="https://cdn.jsdelivr.net/npm/jquery@3.4.1/dist/jquery.min.js"></script>
 	<script src="assets/js/main.js"></script>
 </body>
 
