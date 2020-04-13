@@ -1,7 +1,7 @@
-@import url('https://fonts.googleapis.com/css2?family=Comic+Neue&display=swap":100,300,400,500,700,900|Limelight&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Comic+Neue&family=Roboto&display=swap:100,300,400,500,700,900|Limelight&display=swap');
 
 body {
-    font-family: 'Comic Neue', sans-serif;
+   
     text-align: justify;
     
 }
@@ -21,8 +21,6 @@ body {
     position: relative;
 }
 
-
-
 .opaque-overlay {
     position: absolute;
     top: 0;
@@ -30,6 +28,20 @@ body {
     height: 100%;
     width: 100%;
     background-color: rgba(0, 0, 0, 0.5);
+}
+
+.jumbotron {
+    background-color: transparent;
+}
+
+.jumbotron-header {
+    margin: 40vh 0 10vh 0;
+    margin-bottom: 40px;
+    text-align: left;
+    font-weight: 600;
+    font-family: 'Comic Neue', sans-serif;
+    font-style: italic;
+    color: #a8e619;
 }
 
 .navbar-brand {
@@ -44,6 +56,7 @@ body {
 }
 
 .navbar-nav .nav-item {
+    font-family: 'Comic Neue', sans-serif;
     font-weight: 600;
     font-size: 1.2em;
     letter-spacing: 2px;
@@ -70,30 +83,17 @@ body {
     -o-transition: all 0.35s ease-in-out;
 
 }
-.jumbotron {
-    background-color: transparent;
-}
 
-.jumbotron-header {
-    margin: 50vh 0 10vh 0;
-    margin-bottom: 40px;
-    text-align: left;
-    font-weight: 600;
-    font-style: italic;
-    color: #a8e619;
-}
 
 @media screen and (max-width: 540px){
     .hero-cta {
-        margin: 50vh 0 10vh 0;
+        margin: 30vh 0 10vh 0;
         text-align: right;
     }
     .jumbotron-header {
         text-align: right;
     }
 }
-
-
 
 .btn--book {
     background-color: #6c9708;
@@ -107,7 +107,17 @@ body {
     border-color: #a8e619;
 }
 
- .about p{
+.about{
+    background-color: #466106;
+    width: 100%;
+    color: #fafafa;
+    padding-right: 0;
+    padding-left: 0;
+    margin-right: 0;
+    margin-left: 0;
+}
+
+.about p{
     font-size: 1.2em;
  }
 
@@ -115,23 +125,25 @@ body {
     width: 300px;
     height: 300px;
     display: inline-block;
-    margin: 25px 10px;
+    margin: 30px 10px;
 }
  
-.title {
+.sub-title {
     color: #a8e619;
+    font-size: 2em;
 }
- 
-* {
-  box-sizing: border-box;
-}
+ .title {
+    padding: 5rem 1rem 5rem 1rem;
+ }
 
+.container-fluid{
+    padding: 0;
+}
 .spa-gallery img {
     width: 100%;
     margin-top:20px; 
     margin-bottom:20px;
 }
-
 
 .spa-gallery figure img {
 	opacity: 1;
@@ -142,14 +154,9 @@ body {
 	opacity: .5;
 }
     
-	
-
-
-
-
-
-
-
+.required-input {
+    color: rgba(211, 6, 6, 0.815);
+}
 
 
 
@@ -186,16 +193,49 @@ body {
 
 /* Medium devices (tablets, 768px and up) */
 @media screen and (min-width: 768px) { 
-    h1.vertical-center {
-        margin-left: 3rem;
-        font-size: 125px;
+    
     }
 }
 
 /* Large devices (desktops, 992px and up) */
 @media (min-width: 992px) { 
-    h1.vertical-center {
-        margin-left: 5rem;
-        font-size: 150px
+    
     }
 }
+
+
+
+
+
+.footer-container {
+    padding: 15px 15px 5px 15px;
+    color: #ffffff;
+}
+
+.footer-bg-color {
+    background: #466106;
+}
+
+.footer-heading {
+    margin-top: 8px;
+    margin-bottom: 8px;
+    font-size: 20px;
+    font-weight: 500;
+    text-transform: uppercase;
+}
+
+.footer-section-margin {
+    margin-bottom: 16px;
+}
+
+.footer-heading-social {
+    text-align: center;
+}
+
+.social-links-item {
+    padding: 0 10px;
+    font-size: 38px;
+    text-align: center;
+    color: #ffffff;
+}
+
